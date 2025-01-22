@@ -28,7 +28,7 @@
 
 1. **Download the Repository**:
 ```
-click the green button upper right hand corner
+click the green button upper right hand corner, click download zipfile
 ```
 
 **Install Required Dependencies**: Ensure you have Python installed, then run:
