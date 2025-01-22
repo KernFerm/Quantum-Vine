@@ -112,3 +112,9 @@ Choose an option:
 
 ## Disclaimer
 Quantum-Vine is intended for personal use only. Please respect copyright laws and ensure you have the right to download and convert content.
+
+# LICENSE
+## ***This project is proprietary and all rights are reserved by the author.***
+## ***Unauthorized copying, distribution, or modification of this project is strictly prohibited.***
+## ***Unless You have written permission from the Developer, [Bubbles The Dev](https://github.com/kernferm).***
+
