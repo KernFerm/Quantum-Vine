@@ -1,0 +1,5 @@
+pydub
+yt-dlp
+mutagen
+spotdl
+pyarmor
