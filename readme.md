@@ -106,7 +106,7 @@ Choose an option:
 
 ## Requirements
 
-- `Python 3.11.6 plus`
+- `Python 3.11.9`
 
 - `FFmpeg` installed and added to PATH
 
