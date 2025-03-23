@@ -27,10 +27,13 @@
 
 ## Installation
 
-1. **Download the Repository**:
-```
-click the green button upper right hand corner, click download zipfile
-```
+### Download ZIP:
+1. 📥 Click the green `"Code"` button at the top right of the repository page.
+2. 📂 Choose `"Download ZIP"` from the dropdown menu.
+3. 📁 This will download a `ZIP file` with the entire repository.
+### Extract the ZIP File:
+1. 🗂 Find the downloaded `ZIP file` on your computer.
+2. 🔧 `Extract` it using your computer's built-in extraction tool or a third-party tool like `WinRAR` or `7-Zip`.
 
 **Install Required Dependencies**: Ensure you have Python installed, then run:
 
