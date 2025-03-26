@@ -2,7 +2,6 @@
 
 **Quantum-Vine** is a next-generation audio downloader tool 🎵 that allows you to download and convert audio from YouTube 🎥 and Spotify 🎧 effortlessly. With support for metadata embedding 💾, playlist handling 📋, and high-quality audio output 🔊, Quantum-Vine is your all-in-one solution for creating an organized and enriched music library 📚.
 
-
 ---
 
 ## Features
@@ -15,9 +14,9 @@
   - Downloads individual tracks or playlists from Spotify.
   - Converts tracks to MP3 format with a customizable bitrate.
 
-- 🚀 **Easy to Use**
-  - User-friendly menu-driven interface.
-  - Simple inputs for YouTube and Spotify URLs.
+- 🚀 **Easy to Use GUI**
+  - Modern interface using `ttkbootstrap` for a better user experience.
+  - Smooth progress tracking, log viewer, and intuitive input fields.
 
 - 🔧 **Dependencies Handled**
   - Checks for required tools like FFmpeg.
@@ -27,98 +26,96 @@
 
 ## Installation
 
-### Download ZIP:
+### 1. Download ZIP:
 1. 📥 Click the green `"Code"` button at the top right of the repository page.
 2. 📂 Choose `"Download ZIP"` from the dropdown menu.
 3. 📁 This will download a `ZIP file` with the entire repository.
-### Extract the ZIP File:
+
+### 2. Extract the ZIP File:
 1. 🗂 Find the downloaded `ZIP file` on your computer.
 2. 🔧 `Extract` it using your computer's built-in extraction tool or a third-party tool like `WinRAR` or `7-Zip`.
 
-**Install Required Dependencies**: Ensure you have Python installed, then run:
+### 3. Install Required Dependencies
+Make sure Python is installed, then run:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-2. **Install FFmpeg**:
-
-[Download FFmpeg](https://ffmpeg.org/download.html) and add it to your system's PATH.
-
-
-### 1. Install ffmpeg
+### 4. Install FFmpeg
 
 #### Option A: Install with `winget` (Recommended for Windows Users)
 
 Run this command in **Command Prompt** or **PowerShell** as Administrator:
 
-```
+```bash
 winget install --id Gyan.FFmpeg -e --source winget
 ```
 
-Chocolatey is another package manager for Windows, similar to winget. You can use it to install FFmpeg and other software if winget is failing.
+#### Option B: Install with Chocolatey (Alternative)
 
-To install FFmpeg using Chocolatey, follow these steps:
+First, install Chocolatey:
 
-Install Chocolatey if you haven't already:
-
-Open an elevated Command Prompt (right-click on Command Prompt and select "Run as Administrator").
-Run the following command to install Chocolatey:
-
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; \
+[System.Net.ServicePointManager]::SecurityProtocol = \
+[System.Net.ServicePointManager]::SecurityProtocol -bor 3072; \
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-After Chocolatey is installed, use the following command to install FFmpeg:
+Then install FFmpeg:
 
-```
+```bash
 choco install ffmpeg
 ```
 
+Make sure FFmpeg is added to your system PATH.
+
+---
+
 ## Usage
 
-- Run the script:
+- Run the script with:
 
+```bash
+python Quantum-Vine.py
 ```
-python main.py
-```
 
-### Choose an option:
+You will see a GUI with two tabs:
 
-1: Download audio from YouTube.
+### 🟢 YouTube Tab:
+- Paste a YouTube video or playlist URL.
+- Click `Download` to extract and convert the audio.
 
-2: Download audio from Spotify.
+### 🟢 Spotify Tab:
+- Paste a Spotify song or playlist URL.
+- Click `Download` to download and convert it.
 
-3: Exit the program.
+Logs and progress indicators will keep you informed.
 
-- Follow the prompts to enter a YouTube or Spotify URL.
-
-## Example Output
-
-```
-======================================
-    Welcome to Quantum-Vine
- A Next-Gen Audio Downloader Tool
-======================================
-
-Choose an option:
-1. Download audio from YouTube
-2. Download audio from Spotify
-3. Exit
-```
+---
 
 ## Requirements
 
 - `Python 3.11.9`
-
 - `FFmpeg` installed and added to PATH
 
+---
+
+## Known Limitations
+
+- You **must keep the console (CMD) window open**. Closing it may stop the application.
+- On some machines, GUI apps require this console for subprocess handling.
+
+---
 
 ## Disclaimer
 Quantum-Vine is intended for personal use only. Please respect copyright laws and ensure you have the right to download and convert content.
 
-# LICENSE
-## ***This project is proprietary and all rights are reserved by the author.***
-## ***Unauthorized copying, distribution, or modification of this project is strictly prohibited.***
-## ***Unless You have written permission from the Developer, [Bubbles The Dev](https://github.com/kernferm).***
+---
 
+## LICENSE
+
+### ***This project is proprietary and all rights are reserved by the author.***
+### ***Unauthorized copying, distribution, or modification of this project is strictly prohibited.***
+### ***Unless you have written permission from the Developer, [Bubbles The Dev](https://github.com/kernferm).***
