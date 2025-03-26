@@ -106,6 +106,13 @@ Logs and progress indicators will keep you informed.
 
 ---
 
+## Screenshot
+
+<img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-1.png" width="600">
+<img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-2.png" width="600">
+
+---
+
 ## Requirements
 
 - `Python 3.11.9`
