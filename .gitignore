@@ -35,3 +35,7 @@ Thumbs.db
 # Other temporary files
 *.bak
 *.swp
+
+# Ignore images
+*.png
+*.jpeg
