@@ -35,6 +35,16 @@
 1. 🗂 Find the downloaded `ZIP file` on your computer.
 2. 🔧 `Extract` it using your computer's built-in extraction tool or a third-party tool like `WinRAR` or `7-Zip`.
 
+### 1️⃣ Run the Script
+- **Double-click** `python3119.bat`
+- **Type `Y` and press Enter** to begin installation
+
+### 2️⃣ Python Installation 🐍
+If Python **is not installed**, the script will:
+- Download & Install **Python 3.11.9**
+- Automatically **add Python to PATH**
+
+
 ### 3. Install Required Dependencies
 Make sure Python is installed, then run:
 
