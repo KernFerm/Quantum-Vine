@@ -51,6 +51,7 @@ Run this command in **Command Prompt** or **PowerShell** as Administrator:
 ```bash
 winget install --id Gyan.FFmpeg -e --source winget
 ```
+- If you have issues with winget installing [Fixing Winget - Workaround CLICK HERE](https://github.com/KernFerm/winget-workaround)
 
 #### Option B: Install with Chocolatey (Alternative)
 
