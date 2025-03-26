@@ -127,7 +127,7 @@ Use the following URL formats for best results:
 <img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-1.png" width="470">
 <img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-2.png" width="470">
 
-### To `download another link` simply just `highlight` the existing url and press the `Delete` key.
+### To `download` another link simply just `highlight` the existing url and press the `Delete` key.
 
 ## Troubleshooting
 
