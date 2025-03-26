@@ -35,24 +35,23 @@
 1. 🗂 Find the downloaded `ZIP file` on your computer.
 2. 🔧 `Extract` it using your computer's built-in extraction tool or a third-party tool like `WinRAR` or `7-Zip`.
 
-### 1️⃣ Run the Script
+### 3. Run the Script
 - **Double-click** `python3119.bat`
 - **Type `Y` and press Enter** to begin installation
 
-### 2️⃣ Python Installation 🐍
+### 4. Python Installation 🐍
 If Python **is not installed**, the script will:
 - Download & Install **Python 3.11.9**
 - Automatically **add Python to PATH**
 
-
-### 3. Install Required Dependencies
+### 5. Install Required Dependencies
 Make sure Python is installed, then run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Install FFmpeg
+### 6. Install FFmpeg
 
 #### Option A: Install with `winget` (Recommended for Windows Users)
 
@@ -84,32 +83,65 @@ Make sure FFmpeg is added to your system PATH.
 
 ---
 
-## Usage
+## How to Use
 
-- Run the script with:
+1. **Launch the Application**  
+   Run the `Quantum-Vine.py` script using Python to open the GUI.
 
-```bash
-python Quantum-Vine.py
-```
+2. **Select the Appropriate Tab**  
+   - **YouTube Tab:** For downloading audio from YouTube videos and playlists.
+   - **Spotify Tab:** For downloading audio from Spotify albums or playlists.
 
-You will see a GUI with two tabs:
+3. **Copy & Paste the URL**  
+   - Copy the URL from your browser (using **CTRL+C**).
+   - Click in the URL input field in the desired tab.
+   - Paste the URL using **CTRL+V**.
 
-### 🟢 YouTube Tab:
-- Paste a YouTube video or playlist URL.
-- Click `Download` to extract and convert the audio.
+4. **Start the Download**  
+   Click the **Download** button. The application will begin processing your request:
+   - **YouTube Downloads:** A percentage progress bar and log messages will show the progress of the download and conversion.
+   - **Spotify Downloads:** A percentage progress bar will display progress as the download proceeds (if available), along with status messages.
 
-### 🟢 Spotify Tab:
-- Paste a Spotify song or playlist URL.
-- Click `Download` to download and convert it.
+5. **Find Your Files**  
+   Once the download and conversion are complete, your audio files will be stored in:
+   - `downloaded_audio/Youtube/` for YouTube downloads.
+   - `downloaded_audio/Spotify/` for Spotify downloads.
 
-Logs and progress indicators will keep you informed.
+## Example URL Formats
 
----
+Use the following URL formats for best results:
 
-## Screenshot
+- **YouTube Video:**  
+  `https://www.youtube.com/watch?v=...`
 
-<img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-1.png" width="600">
-<img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-2.png" width="600">
+- **Spotify Album:**  
+  `https://open.spotify.com/album/...`
+
+- **Spotify Playlist:**  
+  `https://open.spotify.com/playlist/...`
+
+> **Important:** You must use **CTRL+V** to paste the URL that you copied from your browser.
+
+## Troubleshooting
+
+- **Invalid URL:**  
+  Ensure that you paste a correct and complete URL. The application supports YouTube and Spotify URLs as shown above.
+  
+- **No Progress:**  
+  If the progress bar or log messages do not update, check your internet connection or try running the script as administrator.
+  
+- **FFmpeg Issues:**  
+  The application requires FFmpeg for converting audio to MP3. If FFmpeg is not found or you encounter issues:
+  - The application will attempt to download and install FFmpeg automatically.
+  - If automatic installation fails, you can manually download FFmpeg from [ffmpeg.org/download.html](https://ffmpeg.org/download.html) and follow the instructions to add it to your system PATH.
+
+## Additional Information
+
+- **Progress Indicators:**  
+  The application displays a percentage progress bar for both YouTube and Spotify downloads (if percentage data is available), so you know when the process is complete.
+
+- **Log Messages:**  
+  Real-time log messages in the GUI inform you of the current status, including any errors or progress updates.
 
 ---
 
@@ -117,6 +149,16 @@ Logs and progress indicators will keep you informed.
 
 - `Python 3.11.9`
 - `FFmpeg` installed and added to PATH
+
+### Python Package Requirements
+```
+pydub
+yt-dlp
+mutagen
+spotdl
+pyarmor
+ttkbootstrap
+```
 
 ---
 
