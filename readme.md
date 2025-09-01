@@ -2,7 +2,7 @@
 
 **Quantum-Vine** is a next-generation audio downloader tool 🎵 that allows you to download and convert audio from YouTube 🎥 and Spotify 🎧 effortlessly. With support for metadata embedding 💾, playlist handling 📋, and high-quality audio output 🔊, Quantum-Vine is your all-in-one solution for creating an organized and enriched music library 📚.
 
-- [https://discord.gg/FxJd3PxXbc](https://discord.gg/FxJd3PxXbc)
+- [https://discord.gg/zQbJJgwbUv](https://discord.gg/zQbJJgwbUv)
 
 ---
 
@@ -188,3 +188,4 @@ Quantum-Vine is intended for personal use only. Please respect copyright laws an
 ### ***This project is proprietary and all rights are reserved by the author.***
 ### ***Unauthorized copying, distribution, or modification of this project is strictly prohibited.***
 ### ***Unless you have written permission from the Developer, [Bubbles The Dev](https://github.com/kernferm).***
+
