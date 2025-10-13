@@ -1,6 +1,6 @@
-pydub
-yt-dlp
-mutagen
-spotdl
-pyarmor
-ttkbootstrap
+pydub==0.25.1
+yt-dlp==2025.9.26
+mutagen==1.47.0
+spotdl==4.4.3
+pyarmor==9.1.9
+ttkbootstrap==1.14.6
