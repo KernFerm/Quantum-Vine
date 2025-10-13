@@ -41,6 +41,7 @@
 ### 3. Run the Script
 - **Double-click** `python3119.bat`
 - **Type `Y` and press Enter** to begin installation
+- [Python.org](https://www.python.org/downloads/release/python-3119/)
 
 ### 4. Python Installation 🐍
 If Python **is not installed**, the script will:
@@ -189,5 +190,6 @@ Quantum-Vine is intended for personal use only. Please respect copyright laws an
 ### ***This project is proprietary and all rights are reserved by the author.***
 ### ***Unauthorized copying, distribution, or modification of this project is strictly prohibited.***
 ### ***Unless you have written permission from the Developer, [Bubbles The Dev](https://github.com/kernferm).***
+
 
 
