@@ -3,4 +3,4 @@ yt-dlp==2025.10.14
 mutagen==1.47.0
 spotdl==4.4.3
 pyarmor==9.1.9
-ttkbootstrap==1.14.7
+ttkbootstrap==1.15.0
