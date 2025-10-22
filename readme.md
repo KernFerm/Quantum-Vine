@@ -1,193 +1,270 @@
-# Quantum-Vine 🌿
+# 🎵 Quantum-Vine Audio Downloader 🎵
 
-**Quantum-Vine** is a next-generation audio downloader tool 🎵 that allows you to download and convert audio from YouTube 🎥 and Spotify 🎧 effortlessly. With support for metadata embedding 💾, playlist handling 📋, and high-quality audio output 🔊, Quantum-Vine is your all-in-one solution for creating an organized and enriched music library 📚.
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![Version](https://img.shields.io/badge/Version-2.0%20Enhanced-green.svg)
+![License](https://img.shields.io/badge/License-Professional%20Edition-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+![GUI](https://img.shields.io/badge/GUI-tkinter%2Bttkbootstrap-orange.svg)
+![Downloads](https://img.shields.io/badge/Downloads-YouTube%20%7C%20Spotify-red.svg)
+![Rate Limiting](https://img.shields.io/badge/Rate%20Limiting-Advanced-brightgreen.svg)
+![VPN Support](https://img.shields.io/badge/VPN-Optimized-purple.svg)
 
----
+**Version 2.0 Enhanced** - Advanced Audio Downloading with Intelligent Rate Limiting
 
-## Features
-- 🎥 **YouTube Downloader**
-  - Downloads audio from individual YouTube videos or playlists.
-  - Converts audio to MP3 format at 192kbps.
-  - Automatically embeds metadata (e.g., title, artist, album).
+Quantum-Vine is a powerful, user-friendly audio downloader that supports YouTube and Spotify with advanced rate limiting protection, VPN optimization, and intelligent queue management.
 
-- 🎵 **Spotify Downloader**
-  - Downloads individual tracks or playlists from Spotify.
-  - Converts tracks to MP3 format with a customizable bitrate.
+## ✨ Key Features
 
-- 🚀 **Easy to Use GUI**
-  - Modern interface using `ttkbootstrap` for a better user experience.
-  - Smooth progress tracking, log viewer, and intuitive input fields.
+### 🚀 **Core Functionality**
+- **YouTube Downloads** - Videos, playlists, channels, and YouTube Music
+- **Spotify Downloads** - Songs, albums, playlists, and artists
+- **High-Quality Audio** - MP3 format with metadata preservation
+- **Modern GUI** - Dark theme with real-time progress monitoring
 
-- 🔧 **Dependencies Handled**
-  - Checks for required tools like FFmpeg.
-  - Automatically installs missing Python packages like `spotDL`.
+### 🛡️ **Advanced Rate Limiting Protection**
+- **6-Strategy Protection System** - Comprehensive rate limit handling
+- **Smart Exponential Backoff** - 3s → 4.5s → 6.75s → up to 300s max delay
+- **Queue-Based Processing** - Sequential downloads prevent server overwhelm
+- **Retry-After Header Compliance** - Respects server-specified wait times
+- **SpotDL Caching** - Metadata caching reduces API calls
+- **Real-Time Status Monitoring** - Live rate limit indicators in GUI
 
----
+### 🌐 **VPN Optimization**
+- **VPN Status Detection** - Check your current IP and location
+- **Location Recommendations** - Best VPN server locations for downloading
+- **Platform-Specific Guidance** - Tailored advice for YouTube vs Spotify
 
-## Installation
+### 📋 **Professional Interface**
+- **Menu Bar** - File and About menus with professional features
+- **Tabbed Interface** - Separate YouTube and Spotify sections
+- **Progress Tracking** - Real-time download progress and queue status
+- **Comprehensive Logging** - Detailed activity logs with timestamps
 
-### 1. Download ZIP:
-1. 📥 Click the green `"Code"` button at the top right of the repository page.
-2. 📂 Choose `"Download ZIP"` from the dropdown menu.
-3. 📁 This will download a `ZIP file` with the entire repository.
+## 🔧 Installation & Setup
 
-### 2. Extract the ZIP File:
-1. 🗂 Find the downloaded `ZIP file` on your computer.
-2. 🔧 `Extract` it using your computer's built-in extraction tool or a third-party tool like `WinRAR` or `7-Zip`.
-
-### 3. Run the Script
-- **Double-click** `python3119.bat`
-- **Type `Y` and press Enter** to begin installation
-- [Python.org](https://www.python.org/downloads/release/python-3119/)
-
-### 4. Python Installation 🐍
-If Python **is not installed**, the script will:
-- Download & Install **Python 3.11.9**
-- Automatically **add Python to PATH**
-
-### 5. Install Required Dependencies
-Make sure Python is installed, then run:
-
+### **Prerequisites**
 ```bash
-pip install -r requirements.txt
+pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
 ```
 
-### 6. Install FFmpeg
+### **Quick Start**
+1. Clone or download the Quantum-Vine files
+2. Install required dependencies
+3. Run: `python Quantum-Vine.py`
+4. Start downloading your favorite audio!
 
-#### Option A: Install with `winget` (Recommended for Windows Users)
+## 📖 How to Use
 
-Run this command in **Command Prompt** or **PowerShell** as Administrator:
+### **Basic Usage**
+1. **Launch Application** - Run `python Quantum-Vine.py`
+2. **Select Tab** - Choose YouTube or Spotify
+3. **Paste URL** - Enter your target URL
+4. **Click Download** - Start the intelligent download process
 
-```bash
-winget install --id Gyan.FFmpeg -e --source winget
+### **Supported URL Formats**
+
+#### **YouTube**
+- Single Video: `https://www.youtube.com/watch?v=VIDEO_ID`
+- Playlist: `https://www.youtube.com/playlist?list=PLAYLIST_ID`
+- Channel: `https://www.youtube.com/channel/CHANNEL_ID`
+- YouTube Music: `https://music.youtube.com/watch?v=VIDEO_ID`
+
+#### **Spotify**
+- Track: `https://open.spotify.com/track/TRACK_ID`
+- Album: `https://open.spotify.com/album/ALBUM_ID`
+- Playlist: `https://open.spotify.com/playlist/PLAYLIST_ID`
+- Artist: `https://open.spotify.com/artist/ARTIST_ID`
+
+## 🛡️ Rate Limiting Guide
+
+### **Status Indicators**
+- 🟢 **Green** - Normal operation, no delays
+- 🟡 **Yellow** - Mild delays active (3-30 seconds)
+- 🔴 **Red** - Heavy rate limiting detected (30+ seconds)
+- 📊 **Queue Counter** - Shows pending downloads
+
+### **Rate Limiting Features**
+1. **Smart Exponential Backoff** - Automatically increases delays
+2. **Queue Management** - Processes downloads sequentially
+3. **Server Compliance** - Respects retry-after headers
+4. **Failure Recovery** - Progressive handling of consecutive failures
+5. **Cache Optimization** - Reduces redundant API calls
+6. **Real-Time Monitoring** - Live status updates
+
+### **If You Get Rate Limited**
+1. **Wait it out** - The system will automatically handle delays
+2. **Check VPN status** - Use "Check VPN Status" button
+3. **Reset limits** - Use "File → Reset Rate Limits" if stuck
+4. **Try VPN** - Switch to recommended server locations
+
+## 🌐 VPN Optimization Guide
+
+### **Why Use a VPN?**
+- **Fresh IP Address** - Bypass IP-based rate limits
+- **Geographic Distribution** - Different regions have different limits
+- **Load Balancing** - Spread requests across server locations
+
+### **Best VPN Server Locations**
+1. **Netherlands (Amsterdam)** - Excellent for both platforms
+2. **Germany (Frankfurt)** - Great Spotify performance
+3. **US East Coast (New York, Virginia)** - Fast YouTube access
+4. **US West Coast (California)** - Alternative US option
+5. **United Kingdom (London)** - Good European alternative
+
+### **VPN Usage Tips**
+- Check current status with "Check VPN Status" button
+- Use "VPN Tips" for location-specific recommendations
+- Switch servers if downloads consistently fail
+- Test different locations for optimal performance
+
+## 📁 File Organization
+
+### **Download Locations**
 ```
-- If you have issues with winget installing [Fixing Winget - Workaround CLICK HERE](https://github.com/KernFerm/winget-workaround)
-
-#### Option B: Install with Chocolatey (Alternative)
-
-First, install Chocolatey:
-
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; \
-[System.Net.ServicePointManager]::SecurityProtocol = \
-[System.Net.ServicePointManager]::SecurityProtocol -bor 3072; \
-iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+downloaded_audio/
+├── Youtube/
+│   └── [Video Title].mp3
+└── Spotify/
+    └── [Track Name].mp3
 ```
 
-Then install FFmpeg:
+## 🎛️ Menu Bar Features
 
-```bash
-choco install ffmpeg
+### **File Menu**
+- **Clear Logs** - Reset all log areas
+- **Reset Rate Limits** - Clear rate limiting counters
+- **Exit** - Close application
+
+### **About Menu**
+- **About Quantum-Vine** - Version and feature information
+- **Help** - Comprehensive usage guide
+
+## 🔧 Advanced Configuration
+
+### **Rate Limiting Settings**
+The application includes intelligent, pre-configured rate limiting settings optimized for best performance:
+
+```python
+# Pre-configured settings (not user-modifiable in compiled version)
+RATE_LIMIT_CONFIG = {
+    'base_delay': 3,        # Base delay in seconds
+    'backoff_multiplier': 1.5,  # Exponential multiplier
+    'max_delay': 300,       # Maximum delay (5 minutes)
+    'consecutive_failures': 0,   # Failure counter
+    'last_attempt': 0       # Last attempt timestamp
+}
 ```
 
-Make sure FFmpeg is added to your system PATH.
+**Note:** In the compiled/protected version, these settings are optimized and cannot be modified by users to ensure optimal performance and compliance with platform requirements.
+
+### **Queue Management**
+- Downloads are processed sequentially to prevent server overwhelm
+- Large playlists are automatically queued
+- Real-time queue status displayed in GUI
+
+## 🚨 Troubleshooting
+
+### **Common Issues**
+
+#### **Rate Limiting Detected**
+```
+🚫 Rate limiting detected during download
+```
+**Solution:** Wait for automatic backoff or use VPN
+
+#### **Download Failures**
+```
+❌ Download failed after retries
+```
+**Solutions:**
+1. Check internet connection
+2. Verify URL is valid and accessible
+3. Try with VPN from different location
+4. Reset rate limits via File menu
+
+#### **Missing Dependencies**
+```
+ModuleNotFoundError: No module named 'yt_dlp'
+```
+**Solution:** Install dependencies with `pip install -r requirements.txt`
+
+#### **FFmpeg Issues**
+```
+FFmpeg not found
+```
+**Solution:** Install FFmpeg or let the application auto-download it
+
+### **Performance Tips**
+1. **Use VPN** - Prevents IP-based rate limiting
+2. **Process Small Batches** - Break large playlists into smaller chunks
+3. **Monitor Status** - Watch rate limit indicators
+4. **Clear Logs** - Keep interface responsive
+5. **Reset When Stuck** - Use File → Reset Rate Limits
+
+## 🔍 Technical Details
+
+### **Dependencies**
+- **yt-dlp** - YouTube downloading engine
+- **spotdl** - Spotify downloading with metadata
+- **ttkbootstrap** - Modern GUI framework
+- **mutagen** - Audio metadata handling
+- **pydub** - Audio processing
+- **requests** - Network operations
+
+### **Rate Limiting Algorithm**
+1. **Initial Delay** - 3 seconds base delay
+2. **Exponential Backoff** - Multiply by 1.5 each failure
+3. **Maximum Cap** - 300 seconds (5 minutes) maximum
+4. **Server Compliance** - Parse and respect retry-after headers
+5. **Queue Processing** - Sequential handling prevents overwhelm
+6. **Smart Recovery** - Reset counters on successful downloads
+
+### **VPN Integration**
+- **IP Detection** - Uses ipapi.co for current location
+- **Location Analysis** - Provides region-specific recommendations
+- **Performance Monitoring** - Tracks success rates by location
+
+## 🆘 Support & Help
+
+### **Built-in Help**
+- Access comprehensive help via **About → Help** menu
+- Real-time status indicators in the GUI
+- Detailed logging for troubleshooting
+
+### **Best Practices**
+1. **Start Small** - Test with single tracks before large playlists
+2. **Monitor Status** - Watch rate limit indicators
+3. **Use VPN Wisely** - Switch locations if needed
+4. **Keep Updated** - Ensure dependencies are current
+5. **Report Issues** - Note error messages for troubleshooting
+
+## 📊 Version History
+
+### **Version 2.0 Enhanced (Current)**
+- ✅ Advanced rate limiting protection (6-strategy system)
+- ✅ VPN optimization and detection
+- ✅ Queue-based processing
+- ✅ Professional menu bar
+- ✅ Real-time status monitoring
+- ✅ Enhanced error handling
+
+### **Version 1.0 Original**
+- ✅ Basic YouTube and Spotify downloading
+- ✅ Simple GUI interface
+- ✅ MP3 conversion
+
+## 📄 License & Credits
+
+**Quantum-Vine Audio Downloader**  
+© 2025 Quantum-Vine Project - Professional Edition
+
+Built with:
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - YouTube downloading
+- [spotdl](https://github.com/spotDL/spotify-downloader) - Spotify downloading
+- [ttkbootstrap](https://github.com/israel-dryer/ttkbootstrap) - Modern GUI
 
 ---
 
-## How to Use
+**Happy Downloading! 🎵** 
 
-1. **Launch the Application**  
-   Run the `Quantum-Vine.py` script using Python to open the GUI.
-
-2. **Select the Appropriate Tab**  
-   - **YouTube Tab:** For downloading audio from YouTube videos and playlists.
-   - **Spotify Tab:** For downloading audio from Spotify albums or playlists.
-
-3. **Copy & Paste the URL**  
-   - Copy the URL from your browser (using **CTRL+C**).
-   - Click in the URL input field in the desired tab.
-   - Paste the URL using **CTRL+V**.
-
-4. **Start the Download**  
-   Click the **Download** button. The application will begin processing your request:
-   - **YouTube Downloads:** A percentage progress bar and log messages will show the progress of the download and conversion.
-   - **Spotify Downloads:** A percentage progress bar will display progress as the download proceeds (if available), along with status messages.
-
-5. **Find Your Files**  
-   Once the download and conversion are complete, your audio files will be stored in:
-   - `downloaded_audio/Youtube/` for YouTube downloads.
-   - `downloaded_audio/Spotify/` for Spotify downloads.
-
-## Example URL Formats
-
-Use the following URL formats for best results:
-
-- **YouTube Video:**  
-  `https://www.youtube.com/watch?v=...`
-
-- **Spotify Album:**  
-  `https://open.spotify.com/album/...`
-
-- **Spotify Playlist:**  
-  `https://open.spotify.com/playlist/...`
-
-> **Important:** You must use **CTRL+V** to paste the URL that you copied from your browser.
-
-## Screenshot
-
-<img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-1.png" width="470">
-<img src="https://github.com/KernFerm/Quantum-Vine/blob/main/screenshot/image-2.png" width="470">
-
-### To `download` another link simply just `highlight` the existing url and press the `Delete` key.
-
-## Troubleshooting
-
-- **Invalid URL:**  
-  Ensure that you paste a correct and complete URL. The application supports YouTube and Spotify URLs as shown above.
-  
-- **No Progress:**  
-  If the progress bar or log messages do not update, check your internet connection or try running the script as administrator.
-  
-- **FFmpeg Issues:**  
-  The application requires FFmpeg for converting audio to MP3. If FFmpeg is not found or you encounter issues:
-  - The application will attempt to download and install FFmpeg automatically.
-  - If automatic installation fails, you can manually download FFmpeg from [ffmpeg.org/download.html](https://ffmpeg.org/download.html) and follow the instructions to add it to your system PATH.
-
-## Additional Information
-
-- **Progress Indicators:**  
-  The application displays a percentage progress bar for both YouTube and Spotify downloads (if percentage data is available), so you know when the process is complete.
-
-- **Log Messages:**  
-  Real-time log messages in the GUI inform you of the current status, including any errors or progress updates.
-
----
-
-## Requirements
-
-- `Python 3.11.9`
-- `FFmpeg` installed and added to PATH
-
-### Python Package Requirements
-```
-pydub
-yt-dlp
-mutagen
-spotdl
-pyarmor
-ttkbootstrap
-```
-
----
-
-## Known Limitations
-
-- You **must keep the console (CMD) window open**. Closing it may stop the application.
-- On some machines, GUI apps require this console for subprocess handling.
-
----
-
-## Disclaimer
-Quantum-Vine is intended for personal use only. Please respect copyright laws and ensure you have the right to download and convert content.
-
----
-
-## LICENSE
-
-### ***This project is proprietary and all rights are reserved by the author.***
-### ***Unauthorized copying, distribution, or modification of this project is strictly prohibited.***
-### ***Unless you have written permission from the Developer, [Bubbles The Dev](https://github.com/kernferm).***
-
-
-
-
+For the best experience, use the rate limiting features and VPN optimization to ensure smooth, uninterrupted downloads from your favorite platforms.
