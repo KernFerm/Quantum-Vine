@@ -44,7 +44,7 @@ Quantum-Vine is a powerful, user-friendly audio downloader that supports YouTube
 
 ### **Prerequisites**
 ```bash
-pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
+pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests pyarmor
 ```
 
 ### **Quick Start**
@@ -268,3 +268,4 @@ Built with:
 **Happy Downloading! 🎵** 
 
 For the best experience, use the rate limiting features and VPN optimization to ensure smooth, uninterrupted downloads from your favorite platforms.
+
