@@ -107,6 +107,7 @@ pip3.11 --version
    ```
 
 ### **Prerequisites**
+- copy and paste in `CMD.exe` or `terminal`. Then Press `Enter`.
 ```bash
 pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
 ```
@@ -332,3 +333,4 @@ Built with:
 **Happy Downloading! 🎵** 
 
 For the best experience, use the rate limiting features and VPN optimization to ensure smooth, uninterrupted downloads from your favorite platforms.
+
