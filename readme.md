@@ -42,9 +42,73 @@ Quantum-Vine is a powerful, user-friendly audio downloader that supports YouTube
 
 ## 🔧 Installation & Setup
 
+### **Python Installation**
+
+#### **🪟 Windows**
+1. **Download Python 3.11+** from [python.org](https://www.python.org/downloads/windows/)
+2. **Run the installer** and check "Add Python to PATH"
+3. **Verify installation** in Command Prompt:
+   ```cmd
+   python --version
+   pip --version
+   ```
+
+#### **🐧 Linux (Ubuntu/Debian)**
+```bash
+# Update package list
+sudo apt update
+
+# Install Python 3.11+
+sudo apt install python3.11 python3.11-pip
+
+# Verify installation
+python3.11 --version
+pip3.11 --version
+
+# Create symlink (optional)
+sudo ln -s /usr/bin/python3.11 /usr/bin/python
+```
+
+#### **🐧 Linux (CentOS/RHEL/Fedora)**
+```bash
+# For Fedora
+sudo dnf install python3.11 python3.11-pip
+
+# For CentOS/RHEL (requires EPEL)
+sudo yum install epel-release
+sudo yum install python311 python311-pip
+
+# Verify installation
+python3.11 --version
+pip3.11 --version
+```
+
+#### **🍎 macOS**
+**Option 1: Using Homebrew (Recommended)**
+```bash
+# Install Homebrew if not installed
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install Python
+brew install python@3.11
+
+# Verify installation
+python3.11 --version
+pip3.11 --version
+```
+
+**Option 2: Official Installer**
+1. Download Python 3.11+ from [python.org](https://www.python.org/downloads/macos/)
+2. Run the `.pkg` installer
+3. Verify in Terminal:
+   ```bash
+   python3 --version
+   pip3 --version
+   ```
+
 ### **Prerequisites**
 ```bash
-pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests pyarmor
+pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
 ```
 
 ### **Quick Start**
@@ -268,4 +332,3 @@ Built with:
 **Happy Downloading! 🎵** 
 
 For the best experience, use the rate limiting features and VPN optimization to ensure smooth, uninterrupted downloads from your favorite platforms.
-
