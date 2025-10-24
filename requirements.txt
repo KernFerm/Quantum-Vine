@@ -1,5 +1,5 @@
 pydub==0.25.1
-yt-dlp==2025.10.14
+yt-dlp==2025.10.22
 mutagen==1.47.0
 spotdl==4.4.3
 pyarmor==9.1.9
