@@ -2,6 +2,6 @@ pydub==0.25.1
 yt-dlp==2025.10.22
 mutagen==1.47.0
 spotdl==4.4.3
-pyarmor==9.1.9
+pyarmor==9.2.0
 ttkbootstrap==1.17.0
 requests==2.32.5
