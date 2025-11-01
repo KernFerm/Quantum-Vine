@@ -1,122 +1,86 @@
 # 🎵 Quantum-Vine Audio Downloader 🎵
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
-![Version](https://img.shields.io/badge/Version-2.0%20Enhanced-green.svg)
+![Version](https://img.shields.io/badge/Version-5.4.32a3-green.svg)
 ![License](https://img.shields.io/badge/License-Professional%20Edition-blue.svg)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
-![GUI](https://img.shields.io/badge/GUI-tkinter%2Bttkbootstrap-orange.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
+![GUI](https://img.shields.io/badge/GUI-Modern%20Dark%20Theme-orange.svg)
 ![Downloads](https://img.shields.io/badge/Downloads-YouTube%20%7C%20Spotify-red.svg)
-![Rate Limiting](https://img.shields.io/badge/Rate%20Limiting-Advanced-brightgreen.svg)
-![VPN Support](https://img.shields.io/badge/VPN-Optimized-purple.svg)
 
-**Version 2.0 Enhanced** - Advanced Audio Downloading with Intelligent Rate Limiting
+**Version 5.4.32a3** - Modern Audio Downloader with Smart Features
 
-Quantum-Vine is a powerful, user-friendly audio downloader that supports YouTube and Spotify with advanced rate limiting protection, VPN optimization, and intelligent queue management.
+A powerful audio downloader for YouTube and Spotify with intelligent rate limiting, auto-clear URLs, session tracking, and enhanced VPN detection.
 
 ## ✨ Key Features
 
-### 🚀 **Core Functionality**
-- **YouTube Downloads** - Videos, playlists, channels, and YouTube Music
-- **Spotify Downloads** - Songs, albums, playlists, and artists
-- **High-Quality Audio** - MP3 format with metadata preservation
-- **Modern GUI** - Dark theme with real-time progress monitoring
+- **YouTube & Spotify Downloads** - High-quality MP3 with metadata
+- **Smart Rate Limiting** - Automatic delay management and queue processing
+- **Session Tracking** - Download counters and auto-clear URL fields
+- **VPN Detection** - Enhanced detection for ExpressVPN and other services
+- **Modern GUI** - Dark theme with real-time progress and status indicators
+- **Queue Management** - Sequential playlist processing to prevent rate limits
 
-### 🛡️ **Advanced Rate Limiting Protection**
-- **6-Strategy Protection System** - Comprehensive rate limit handling
-- **Smart Exponential Backoff** - 3s → 4.5s → 6.75s → up to 300s max delay
-- **Queue-Based Processing** - Sequential downloads prevent server overwhelm
-- **Retry-After Header Compliance** - Respects server-specified wait times
-- **SpotDL Caching** - Metadata caching reduces API calls
-- **Real-Time Status Monitoring** - Live rate limit indicators in GUI
+## 🚀 Quick Start
 
-### 🌐 **VPN Optimization**
-- **VPN Status Detection** - Check your current IP and location
-- **Location Recommendations** - Best VPN server locations for downloading
-- **Platform-Specific Guidance** - Tailored advice for YouTube vs Spotify
-
-### 📋 **Professional Interface**
-- **Menu Bar** - File and About menus with professional features
-- **Tabbed Interface** - Separate YouTube and Spotify sections
-- **Progress Tracking** - Real-time download progress and queue status
-- **Comprehensive Logging** - Detailed activity logs with timestamps
-
-## 🔧 Installation & Setup
-
-### **Python Installation**
-
-#### **🪟 Windows**
-1. **Download Python 3.11+** from [python.org](https://www.python.org/downloads/windows/)
-2. **Run the installer** and check "Add Python to PATH"
-3. **Verify installation** in Command Prompt:
-   ```cmd
-   python --version
-   pip --version
-   ```
-
-#### **🐧 Linux (Ubuntu/Debian)**
-```bash
-# Update package list
-sudo apt update
-
-# Install Python 3.11+
-sudo apt install python3.11 python3.11-pip
-
-# Verify installation
-python3.11 --version
-pip3.11 --version
-
-# Create symlink (optional)
-sudo ln -s /usr/bin/python3.11 /usr/bin/python
-```
-
-#### **🐧 Linux (CentOS/RHEL/Fedora)**
-```bash
-# For Fedora
-sudo dnf install python3.11 python3.11-pip
-
-# For CentOS/RHEL (requires EPEL)
-sudo yum install epel-release
-sudo yum install python311 python311-pip
-
-# Verify installation
-python3.11 --version
-pip3.11 --version
-```
-
-#### **🍎 macOS**
-**Option 1: Using Homebrew (Recommended)**
-```bash
-# Install Homebrew if not installed
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Install Python
-brew install python@3.11
-
-# Verify installation
-python3.11 --version
-pip3.11 --version
-```
-
-**Option 2: Official Installer**
-1. Download Python 3.11+ from [python.org](https://www.python.org/downloads/macos/)
-2. Run the `.pkg` installer
-3. Verify in Terminal:
+1. **Install Python 3.11+** from [python.org](https://python.org)
+2. **Install Dependencies**:
    ```bash
-   python3 --version
-   pip3 --version
+   pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
+   ```
+3. **Run the Application**:
+   ```bash
+   python Quantum-Vine.py
    ```
 
-### **Prerequisites**
-- copy and paste in `CMD.exe` or `terminal`. Then Press `Enter`.
-```bash
-pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
+## � How to Use
+
+1. **Launch** the application
+2. **Select tab** - YouTube or Spotify
+3. **Paste URL** and click Download
+4. **URL auto-clears** after successful download
+5. **Track your downloads** with the session counter
+
+## 📋 Recent Updates (v5.4.32a3)
+
+- ✅ **Auto-Clear URLs** - Fields clear automatically after successful downloads
+- ✅ **Download Counters** - Track YouTube/Spotify downloads per session
+- ✅ **Enhanced VPN Detection** - Better recognition of VPN services
+- ✅ **Improved Format Strategies** - Fixes for YouTube "format not available" errors
+- ✅ **Better UI Readability** - Fixed hard-to-read text colors
+- ✅ **Code Optimization** - Removed duplicate functions and improved performance
+
+## �️ Rate Limiting Features
+
+- **Green** 🟢 - Normal operation
+- **Yellow** 🟡 - Mild delays (3-30s)
+- **Red** 🔴 - Heavy rate limiting (30s+)
+- **Auto-Queue** - Sequential processing prevents server overwhelm
+
+## � VPN Support
+
+- **Status Detection** - Check current IP and VPN status
+- **Service Recognition** - Detects ExpressVPN, NordVPN, and others
+- **Location Tips** - Best server recommendations
+
+## 📁 Downloads Saved To
+
+```
+downloaded_audio/
+├── Youtube/
+│   └── [Video Title].mp3
+└── Spotify/
+    └── [Track Name].mp3
 ```
 
-### **Quick Start**
-1. Clone or download the Quantum-Vine files
-2. Install required dependencies
-3. Run: `python Quantum-Vine.py`
-4. Start downloading your favorite audio!
+## 🔧 Troubleshooting
+
+- **Rate Limited?** - Wait for automatic delays or use VPN
+- **Download Fails?** - Check URL validity and internet connection
+- **Need to Reset?** - Use File → Reset Rate Limits
+
+---
+
+**Happy Downloading! 🎵**
 
 ## 📖 How to Use
 
@@ -305,13 +269,15 @@ FFmpeg not found
 
 ## 📊 Version History
 
-### **Version 2.0 Enhanced (Current)**
+### **Version 5.4.32a3 (Current)**
 - ✅ Advanced rate limiting protection (6-strategy system)
 - ✅ VPN optimization and detection
 - ✅ Queue-based processing
 - ✅ Professional menu bar
 - ✅ Real-time status monitoring
 - ✅ Enhanced error handling
+- ✅ Auto-clear URLs and session tracking
+- ✅ Improved format strategies and UI readability
 
 ### **Version 1.0 Original**
 - ✅ Basic YouTube and Spotify downloading
@@ -333,4 +299,3 @@ Built with:
 **Happy Downloading! 🎵** 
 
 For the best experience, use the rate limiting features and VPN optimization to ensure smooth, uninterrupted downloads from your favorite platforms.
-
