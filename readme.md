@@ -7,7 +7,7 @@
 ![GUI](https://img.shields.io/badge/GUI-Modern%20Dark%20Theme-orange.svg)
 ![Downloads](https://img.shields.io/badge/Downloads-YouTube%20%7C%20Spotify-red.svg)
 
-**Version 5.4.32a3** - Cross-Platform Audio Downloader with Smart Features
+### **Version 5.4.32a3** - Cross-Platform Audio Downloader with Smart Features
 
 A powerful audio downloader for YouTube and Spotify with intelligent rate limiting, auto-clear URLs, session tracking, smart network detection, and **full cross-platform support**.
 
@@ -131,6 +131,7 @@ downloaded_audio/
 ---
 
 **Happy Downloading! 🎵**
+
 
 
 
