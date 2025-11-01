@@ -14,7 +14,7 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
 ## ✨ Key Features
 
 - **🌍 Cross-Platform Support** - Works on Windows, Linux, and macOS
-- **📱 Auto FFmpeg Installation** - Detects and installs FFmpeg automatically
+- **⚙️ Auto FFmpeg Installation** - Detects and installs FFmpeg automatically
 - **YouTube & Spotify Downloads** - High-quality MP3 with metadata
 - **Smart Rate Limiting** - Automatic delay management and queue processing
 - **Session Tracking** - Download counters and auto-clear URL fields
@@ -28,7 +28,7 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
 1. **Install Python 3.11+** from [python.org](https://python.org)
 2. **Install Dependencies**:
    ```bash
-   pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
+   pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests pyarmor
    ```
 3. **Run the Application**:
    ```bash
@@ -49,7 +49,7 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
    ```
 2. **Install Dependencies**:
    ```bash
-   pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests
+   pip install yt-dlp spotdl ttkbootstrap mutagen pydub requests pyarmor
    ```
 3. **Run the Application**:
    ```bash
@@ -67,20 +67,20 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
    ```
 2. **Install Dependencies**:
    ```bash
-   pip3 install yt-dlp spotdl ttkbootstrap mutagen pydub requests
+   pip3 install yt-dlp spotdl ttkbootstrap mutagen pydub requests pyarmor
    ```
 3. **Run the Application**:
    ```bash
    python3 Quantum-Vine.py
    ```
 
-### 🔧 FFmpeg Auto-Installation
+### ⚙️ FFmpeg Auto-Installation
 - **Windows**: Downloads and installs automatically from Gyan.dev
 - **Linux**: Uses your system package manager (apt, dnf, pacman, etc.)
 - **macOS**: Uses Homebrew or MacPorts for installation
 - **Manual**: Falls back to manual instructions if auto-install fails
 
-## � How to Use
+## 📖 How to Use
 
 1. **Launch** the application
 2. **Select tab** - YouTube or Spotify
@@ -91,7 +91,7 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
 ## 📋 Recent Updates (v5.4.32a3)
 
 - 🌍 **Cross-Platform Support** - Full Windows, Linux, and macOS compatibility
-- 🔧 **Auto FFmpeg Installation** - Intelligent FFmpeg detection and installation across all platforms
+- ⚙️ **Auto FFmpeg Installation** - Intelligent FFmpeg detection and installation across all platforms
 - ✅ **Auto-Clear URLs** - Fields clear automatically after successful downloads
 - ✅ **Download Counters** - Track YouTube/Spotify downloads per session
 - ✅ **Enhanced Platform Detection** - Smart package manager detection for Linux distributions
@@ -99,7 +99,7 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
 - ✅ **Better UI Readability** - Fixed hard-to-read text colors
 - ✅ **Code Optimization** - Removed duplicate functions and improved performance
 
-## �️ Rate Limiting Features
+## ⚡ Rate Limiting Features
 
 - **Green** 🟢 - Normal operation
 - **Yellow** 🟡 - Mild delays (3-30s)
@@ -122,7 +122,7 @@ downloaded_audio/
     └── [Track Name].mp3
 ```
 
-## 🔧 Troubleshooting
+## ⚙️ Troubleshooting
 
 - **Rate Limited?** - Wait for automatic delays or switch networks
 - **Download Fails?** - Check URL validity and internet connection
