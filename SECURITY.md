@@ -12,7 +12,9 @@ The following versions of Quantum-Vine are currently supported with security upd
 | ------- | ------------------ | ------ |
 | 5.4.32a3| :white_check_mark: | Current Release |
 | 5.4.x   | :x:                | End of Life |
-| 5.x.x   | :x:                | End of Life |
+| 5.2.x   | :x:                | End of Life |
+| 4.8.x   | :x:                | End of Life |
+| 3.5.x   | :x:                | End of Life |
 | 2.1.x   | :x:                | End of Life |
 | 2.0.x   | :x:                | End of Life |
 | 1.0.x   | :x:                | End of Life |
