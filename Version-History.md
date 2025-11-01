@@ -16,6 +16,15 @@ Complete development timeline and feature evolution of the Quantum-Vine Audio Do
 - Better UI readability and color scheme fixes
 - Advanced network routing and connection management
 
+### 🌍 Version 5.4 (2025)
+- **Cross-Platform Foundation**
+- Initial cross-platform support implementation
+- Basic Windows, Linux, macOS compatibility
+- Cross-platform FFmpeg detection framework
+- Platform-specific installation methods
+- Universal subprocess handling
+- Multi-platform GUI compatibility
+
 ### 🔧 Version 5.2 (2025)
 - **Code Optimization & Logic Fixes**
 - Major code refactoring and function improvements
@@ -116,17 +125,17 @@ Complete development timeline and feature evolution of the Quantum-Vine Audio Do
 
 ### 📊 Feature Timeline
 
-| Feature | v1.0 | v2.0 | v2.1 | v3.5 | v4.8 | v5.2 | v5.4.32a3 |
-|---------|------|------|------|------|------|------|-----------|
-| YouTube Downloads | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Spotify Downloads | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Rate Limiting | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Session Tracking | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| VPN Support | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
-| Enhanced YouTube | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
-| Code Optimization | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
-| Cross-Platform | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| Auto FFmpeg | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Feature | v1.0 | v2.0 | v2.1 | v3.5 | v4.8 | v5.2 | v5.4 | v5.4.32a3 |
+|---------|------|------|------|------|------|------|------|-----------|
+| YouTube Downloads | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Spotify Downloads | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Rate Limiting | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Session Tracking | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| VPN Support | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Enhanced YouTube | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Code Optimization | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ✅ |
+| Cross-Platform | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| Auto FFmpeg | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ |
 
 ### 🔄 Architecture Evolution
 
