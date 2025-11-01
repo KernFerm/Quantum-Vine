@@ -44,7 +44,7 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
 
 - ✅ **Auto-Clear URLs** - Fields clear automatically after successful downloads
 - ✅ **Download Counters** - Track YouTube/Spotify downloads per session
-- - **VPN Detection** - Enhanced detection for ExpressVPN and other services
+- - **VPN Detection** - Enhanced detection
 - ✅ **Improved Format Strategies** - Fixes for YouTube "format not available" errors
 - ✅ **Better UI Readability** - Fixed hard-to-read text colors
 - ✅ **Code Optimization** - Removed duplicate functions and improved performance
@@ -81,3 +81,4 @@ downloaded_audio/
 ---
 
 **Happy Downloading! 🎵**
+
