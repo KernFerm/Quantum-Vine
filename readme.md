@@ -75,18 +75,18 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
    ```
 
 ### ⚙️ FFmpeg Auto-Installation
-- **Windows**: Downloads and installs automatically from Gyan.dev
-- **Linux**: Uses your system package manager (apt, dnf, pacman, etc.)
-- **macOS**: Uses Homebrew or MacPorts for installation
-- **Manual**: Falls back to manual instructions if auto-install fails
+- **🪟 Windows**: Downloads and installs automatically from Gyan.dev
+- **🐧 Linux**: Uses your system package manager (apt, dnf, pacman, etc.)
+- **🍎 macOS**: Uses Homebrew or MacPorts for installation
+- **📖 Manual**: Falls back to manual instructions if auto-install fails
 
 ## 📖 How to Use
 
-1. **Launch** the application
-2. **Select tab** - YouTube or Spotify
-3. **Paste URL** and click Download
-4. **URL auto-clears** after successful download
-5. **Track your downloads** with the session counter
+1. **🚀 Launch** the application
+2. **📂 Select tab** - YouTube or Spotify
+3. **📋 Paste URL** and click Download
+4. **✨ URL auto-clears** after successful download
+5. **📊 Track your downloads** with the session counter
 
 ## 📋 Recent Updates (v5.4.32a3)
 
@@ -131,4 +131,5 @@ downloaded_audio/
 ---
 
 **Happy Downloading! 🎵**
+
 
