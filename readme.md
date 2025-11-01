@@ -124,12 +124,13 @@ downloaded_audio/
 
 ## ⚙️ Troubleshooting
 
-- **Rate Limited?** - Wait for automatic delays or switch networks
-- **Download Fails?** - Check URL validity and internet connection
-- **Need to Reset?** - Use File → Reset Rate Limits
+- **⏳ Rate Limited?** - Wait for automatic delays or switch networks
+- **❌ Download Fails?** - Check URL validity and internet connection
+- **🔄 Need to Reset?** - Use File → Reset Rate Limits
 
 ---
 
 **Happy Downloading! 🎵**
+
 
 
