@@ -15,12 +15,12 @@ A powerful audio downloader for YouTube and Spotify with intelligent rate limiti
 
 - **🌍 Cross-Platform Support** - Works on Windows, Linux, and macOS
 - **⚙️ Auto FFmpeg Installation** - Detects and installs FFmpeg automatically
-- **YouTube & Spotify Downloads** - High-quality MP3 with metadata
-- **Smart Rate Limiting** - Automatic delay management and queue processing
-- **Session Tracking** - Download counters and auto-clear URL fields
-- **Network Detection** - Smart connection status monitoring
-- **Modern GUI** - Dark theme with real-time progress and status indicators
-- **Queue Management** - Sequential playlist processing to prevent rate limits
+- **🎵 YouTube & Spotify Downloads** - High-quality MP3 with metadata
+- **⚡ Smart Rate Limiting** - Automatic delay management and queue processing
+- **📊 Session Tracking** - Download counters and auto-clear URL fields
+- **🌐 Network Detection** - Smart connection status monitoring
+- **🎨 Modern GUI** - Dark theme with real-time progress and status indicators
+- **📋 Queue Management** - Sequential playlist processing to prevent rate limits
 
 ## 🚀 Quick Start
 
@@ -131,3 +131,4 @@ downloaded_audio/
 ---
 
 **Happy Downloading! 🎵**
+
